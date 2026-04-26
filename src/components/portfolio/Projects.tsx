@@ -3,6 +3,12 @@ import { ExternalLink, Github } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Ovasense from "@/assets/ovaSense.png";
+import hackerone from "@/assets/hackerone.png";
+import php from "@/assets/php.png";
+import design from "@/assets/design.png";
+import photography from "@/assets/photography.png";
+import rahma from "@/assets/rahma.jpg";
 
 type Category = "All" | "Tech" | "Design" | "Media";
 
@@ -21,6 +27,7 @@ const projects: {
       "Startup concept — a smart health-tech platform improving women's wellness in Ghana through accessible tracking and education.",
     category: "Tech",
     tags: ["Startup", "Health", "React"],
+    image: Ovasense,
     link: "#",
   },
   {
@@ -29,6 +36,7 @@ const projects: {
       "Disclosed vulnerabilities ranging from IDOR to XSS across various programs — improving security for thousands of users.",
     category: "Tech",
     tags: ["Security", "HackerOne", "Pentesting"],
+    image: hackerone,
     link: "https://hackerone.com/",
   },
   {
@@ -37,6 +45,7 @@ const projects: {
       "Custom PHP + MySQL applications: dashboards, school management, and e-commerce systems built for local businesses.",
     category: "Tech",
     tags: ["PHP", "MySQL", "Backend"],
+    image: php,
     link: "#",
   },
   {
@@ -45,6 +54,7 @@ const projects: {
       "Logo systems, social media kits and marketing visuals crafted in Figma & Adobe Illustrator for emerging brands.",
     category: "Design",
     tags: ["Figma", "Branding", "Logo"],
+    image: design,
     link: "#",
   },
   {
@@ -53,6 +63,7 @@ const projects: {
       "Event, portrait and editorial photography — capturing real moments with cinematic color grading.",
     category: "Media",
     tags: ["Photography", "Editorial"],
+    image: photography,
     link: "#",
   },
   {
@@ -61,6 +72,7 @@ const projects: {
       "Camera operation and post-production work for TV shows and live programs at Rahma TV Network.",
     category: "Media",
     tags: ["Videography", "Broadcast"],
+    image: rahma,
     link: "#",
   },
 ];
@@ -108,13 +120,15 @@ const Projects = () => {
               {/* Image placeholder — drop your project images here */}
               <div className="relative aspect-[16/10] bg-secondary overflow-hidden border-b border-border">
                 <div className="absolute inset-0 flex items-center justify-center text-xs text-muted-foreground">
-                  📷 Add project image
+                   <img src={p.image} alt={p.title} className="object-cover w-full h-full" />
+                  
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-smooth" />
               </div>
 
               <div className="p-6 space-y-4">
                 <div className="flex items-center justify-between">
+                  
                   <Badge variant="secondary" className="bg-primary/10 text-primary border-0">
                     {p.category}
                   </Badge>
@@ -142,6 +156,8 @@ const Projects = () => {
                 </div>
               </div>
             </Card>
+
+            
           ))}
         </div>
       </div>

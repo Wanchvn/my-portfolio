@@ -1,7 +1,7 @@
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
-
+import ProfilePic from "@/assets/ProfilePic.jpg";
 const Hero = () => {
   return (
     <section
@@ -52,14 +52,14 @@ const Hero = () => {
 
           <div className="flex items-center gap-4 pt-2">
             <a
-              href="mailto:hello@example.com"
+              href="mailto:mercy4805@gmail.com"
               className="p-2.5 rounded-lg border border-border glass hover:text-primary hover:border-primary transition-smooth"
               aria-label="Email"
             >
               <Mail size={18} />
             </a>
             <a
-              href="https://github.com/"
+              href="https://github.com/Wanchvn"
               target="_blank"
               rel="noreferrer"
               className="p-2.5 rounded-lg border border-border glass hover:text-primary hover:border-primary transition-smooth"
@@ -68,7 +68,7 @@ const Hero = () => {
               <Github size={18} />
             </a>
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/iddrisu-umar-farouk-186384260/"
               target="_blank"
               rel="noreferrer"
               className="p-2.5 rounded-lg border border-border glass hover:text-primary hover:border-primary transition-smooth"
@@ -90,7 +90,7 @@ const Hero = () => {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 flex items-center justify-center text-xs text-muted-foreground bg-card/80 backdrop-blur-sm">
-                Add your photo → /public/profile.jpg
+                <img src={ProfilePic} alt="Iddrisu Umar Farouk" />
               </div>
             </div>
             <div className="absolute -bottom-4 -right-4 px-4 py-2 rounded-xl glass border border-border shadow-soft text-xs font-mono">
