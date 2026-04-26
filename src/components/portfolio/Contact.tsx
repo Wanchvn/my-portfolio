@@ -61,7 +61,7 @@ const Contact = () => {
               </a>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="/cv.pdf" download>Download CV</a>
+              <a href="../../public/cv.docx" download>Download CV</a>
             </Button>
           </div>
           <div className="flex justify-center gap-3 mt-8">
