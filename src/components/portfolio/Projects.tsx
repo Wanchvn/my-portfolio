@@ -28,7 +28,7 @@ const projects: {
     category: "Tech",
     tags: ["Startup", "Health", "React"],
     image: Ovasense,
-    link: "#",
+    link: "https://ovasense-37521.web.app/",
   },
   {
     title: "HackerOne Bug Bounty Findings",
@@ -37,7 +37,7 @@ const projects: {
     category: "Tech",
     tags: ["Security", "HackerOne", "Pentesting"],
     image: hackerone,
-    link: "https://hackerone.com/",
+    link: "https://hackerone.com/wanchvn?type=user",
   },
   {
     title: "PHP Web Application Suite",

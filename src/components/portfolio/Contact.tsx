@@ -56,12 +56,12 @@ const Contact = () => {
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             <Button asChild variant="hero" size="lg">
-              <a href="mailto:hello@example.com">
+              <a href="mailto:mercy4805@gmail.com">
                 <Send size={18} className="mr-1" /> Get in touch
               </a>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="/cv.docx" download>Download CV</a>
+              <a href="/cv.pdf" download>Download CV</a>
             </Button>
           </div>
           <div className="flex justify-center gap-3 mt-8">
