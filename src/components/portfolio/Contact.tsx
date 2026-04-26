@@ -3,9 +3,9 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 const socials = [
-  { icon: Mail, label: "Email", value: "hello@example.com", href: "mailto:hello@example.com" },
-  { icon: Linkedin, label: "LinkedIn", value: "/in/iddrisu-umar-farouk", href: "https://linkedin.com/" },
-  { icon: Github, label: "GitHub", value: "@iddrisu-uf", href: "https://github.com/" },
+  { icon: Mail, label: "Email", value: "mercy4805@gmail.com", href: "mailto:mercy4805@gmail.com" },
+  { icon: Linkedin, label: "LinkedIn", value: "/in/iddrisu-umar-farouk", href: "https://www.linkedin.com/in/iddrisu-umar-farouk-186384260/" },
+  { icon: Github, label: "GitHub", value: "@wanchvn", href: "https://github.com/Wanchvn" },
 ];
 
 const Contact = () => {
