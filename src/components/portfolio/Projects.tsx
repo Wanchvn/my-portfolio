@@ -9,6 +9,7 @@ import php from "@/assets/php.png";
 import design from "@/assets/design.png";
 import photography from "@/assets/photography.png";
 import rahma from "@/assets/rahma.jpg";
+import heroImage  from "@/assets/heroImage.png"; 
 
 type Category = "All" | "Tech" | "Design" | "Media";
 
@@ -30,6 +31,16 @@ const projects: {
     image: Ovasense,
     link: "https://ovasense-37521.web.app/",
   },
+  {
+    title: "E-Millennial Store",
+    description:
+      "A modern and responsive e-commerce website built after completing the One Million Coders Frontend Development course",
+    category: "Tech",
+    tags: ["Test", "E-commerce", "Html", "CSS", "JavaScript"],
+    image: heroImage,
+    link: "https://chipper-piroshki-70f42f.netlify.app/",
+  },
+
   {
     title: "HackerOne Bug Bounty Findings",
     description:
