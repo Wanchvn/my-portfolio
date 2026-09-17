@@ -10,6 +10,7 @@ import design from "@/assets/design.png";
 import photography from "@/assets/photography.png";
 import rahma from "@/assets/rahma.jpg";
 import heroImage  from "@/assets/heroImage.png"; 
+import WorgaX from "@assets/WorgaX.png"
 
 type Category = "All" | "Tech" | "Design" | "Media";
 
@@ -30,6 +31,16 @@ const projects: {
     tags: ["Startup", "Health", "React"],
     image: Ovasense,
     link: "https://ovasense-37521.web.app/",
+  },
+
+  {
+    title: "WorgaX",
+    description:
+      "A modern file organizer and format converter for Windows. Automatically sorts files into categorized folders, supports custom categories, and includes a built-in dark/light theme — built with C++ and the Win32 API.",
+    category: "Tech",
+    tags: ["Startup", "Health", "React"],
+    image: WorgaX,
+    link: "https://worga-xweb.vercel.app/",
   },
   {
     title: "E-Millennial Store",
